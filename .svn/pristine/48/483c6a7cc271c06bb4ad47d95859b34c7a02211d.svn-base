@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0A8BBE0-D7CB-481F-93DA-B772042B8DC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Consumer</RootNamespace>
+    <AssemblyName>Consumer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Constants, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBS\Constants.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlsLbr, Version=1.1.20.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBS\ControlsLbr.dll</HintPath>
+    </Reference>
+    <Reference Include="DataSql, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBS\DataSql.dll</HintPath>
+    </Reference>
+    <Reference Include="Documents">
+      <HintPath>..\LIBS\Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="FastTree, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Декомпилятор C#\EIS_DotPeek\LIB\FastTree.dll</HintPath>
+    </Reference>
+    <Reference Include="FormLbr">
+      <HintPath>..\LIBS\FormLbr.dll</HintPath>
+    </Reference>
+    <Reference Include="Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBS\Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\LIBS\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\LIBS\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Reference">
+      <HintPath>..\LIBS\Reference.dll</HintPath>
+    </Reference>
+    <Reference Include="References">
+      <HintPath>..\LIBS\References.dll</HintPath>
+    </Reference>
+    <Reference Include="SchemeModel">
+      <HintPath>..\LIBS\SchemeModel.dll</HintPath>
+    </Reference>
+    <Reference Include="SchemeModelN, Version=1.0.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBS\SchemeModelN.dll</HintPath>
+    </Reference>
+    <Reference Include="SchemeReports">
+      <HintPath>..\LIBS\SchemeReports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBS\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBS\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\GroupByGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\LinqTreeExtension.cs" />
+    <Compile Include="Classes\Node.cs" />
+    <Compile Include="Classes\TabControlHelper.cs" />
+    <Compile Include="Classes\Tables.cs" />
+    <Compile Include="Classes\TreeViewConverter.cs" />
+    <Compile Include="DataSet\dsFastTree.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFastTree.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AbnFastTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AbnFastTree.Designer.cs">
+      <DependentUpon>AbnFastTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTreeSchmObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTreeSchmObj.designer.cs">
+      <DependentUpon>FormTreeSchmObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AbnFastTree.resx">
+      <DependentUpon>AbnFastTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTreeSchmObj.resx">
+      <DependentUpon>FormTreeSchmObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataSet\dsFastTree.xsc">
+      <DependentUpon>dsFastTree.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsFastTree.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFastTree.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsFastTree.xss">
+      <DependentUpon>dsFastTree.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cities.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\road.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abonent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homemedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\object.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementDel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementInformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\substation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="vL_SchmAbnFull_2020.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Legal\Legal.csproj">
+      <Project>{31fd9fed-6cab-4b84-ac90-037df9ce7f67}</Project>
+      <Name>Legal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Excel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

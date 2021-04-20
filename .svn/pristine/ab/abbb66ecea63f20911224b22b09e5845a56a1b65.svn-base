@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3870D43F-9DE1-4705-A66B-7BAC6BCDE0D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contractor</RootNamespace>
+    <AssemblyName>Contractor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseUlges|AnyCPU'">
+    <OutputPath>bin\ReleaseUlges\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugUlges|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugUlges\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlsLbr">
+      <HintPath>..\LIBS\ControlsLbr.dll</HintPath>
+    </Reference>
+    <Reference Include="DataSql">
+      <HintPath>..\LIBS\DataSql.dll</HintPath>
+    </Reference>
+    <Reference Include="Documents">
+      <HintPath>..\LIBS\Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="DXFLibrary">
+      <HintPath>..\LIBS\DXFLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="FormLbr">
+      <HintPath>..\LIBS\FormLbr.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\EISCODER\LIBS\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\EISCODER\LIBS\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="OfficeLB">
+      <HintPath>..\LIBS\OfficeLB.dll</HintPath>
+    </Reference>
+    <Reference Include="Passport">
+      <HintPath>..\LIBS\Passport.dll</HintPath>
+    </Reference>
+    <Reference Include="PluginInterfaces">
+      <HintPath>..\LIBS\PluginInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Reference">
+      <HintPath>..\LIBS\Reference.dll</HintPath>
+    </Reference>
+    <Reference Include="Scheme">
+      <HintPath>..\LIBS\Scheme.dll</HintPath>
+    </Reference>
+    <Reference Include="SchemeCtrl2">
+      <HintPath>..\LIBS\SchemeCtrl2.dll</HintPath>
+    </Reference>
+    <Reference Include="Services">
+      <HintPath>..\LIBS\Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telemetry">
+      <HintPath>..\LIBS\Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="WinDocking">
+      <HintPath>..\LIBS\WinDocking.dll</HintPath>
+    </Reference>
+    <Reference Include="WordLB">
+      <HintPath>..\LIBS\WordLB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Cache.cs" />
+    <Compile Include="Classes\DataRetriever.cs" />
+    <Compile Include="DataSets\DataSetCont.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCont.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormaddEditAbnType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormaddEditAbnType.Designer.cs">
+      <DependentUpon>FormaddEditAbnType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddEditCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddEditCont.Designer.cs">
+      <DependentUpon>FormAddEditCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddEditContracor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddEditContracor.designer.cs">
+      <DependentUpon>FormAddEditContracor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddEditObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddEditObj.Designer.cs">
+      <DependentUpon>FormAddEditObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormContactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormContactor.Designer.cs">
+      <DependentUpon>FormContactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormContractorNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormContractorNew.Designer.cs">
+      <DependentUpon>FormContractorNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FormaddEditAbnType.resx">
+      <DependentUpon>FormaddEditAbnType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddEditCont.resx">
+      <DependentUpon>FormAddEditCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddEditContracor.resx">
+      <DependentUpon>FormAddEditContracor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddEditObj.resx">
+      <DependentUpon>FormAddEditObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormContactor.resx">
+      <DependentUpon>FormContactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormContractorNew.resx">
+      <DependentUpon>FormContractorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSets\DataSetCont.xsc">
+      <DependentUpon>DataSetCont.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetCont.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCont.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSetCont.xss">
+      <DependentUpon>DataSetCont.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Constants\Constants.csproj">
+      <Project>{DADAB86E-14A3-4238-882B-D0A4225DDEA5}</Project>
+      <Name>Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Legal\Legal.csproj">
+      <Project>{31FD9FED-6CAB-4B84-AC90-037DF9CE7F67}</Project>
+      <Name>Legal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prv\Prv.csproj">
+      <Project>{C31D5809-3384-49A0-9818-91AABD08E5BA}</Project>
+      <Name>Prv</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filtr_my.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementDel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElementInformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1304663065_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1304663141_Pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1304672652_Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
